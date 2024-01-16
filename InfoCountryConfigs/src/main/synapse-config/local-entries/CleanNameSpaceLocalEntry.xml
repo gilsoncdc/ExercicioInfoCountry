@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localEntry key="CleanNameSpaceLocalEntry" xmlns="http://ws.apache.org/ns/synapse">
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <!-- Template to process each element -->
+        <xsl:template match="*">
+            <!-- Create an element with the same name but without the namespace -->
+            <xsl:element name="{local-name()}">
+                <!-- Apply templates to attributes and child nodes -->
+                <xsl:apply-templates select="@*|node()"/>
+            </xsl:element>
+        </xsl:template>
+        <!-- Template to process each attribute -->
+        <xsl:template match="@*">
+            <!-- Create an attribute with the same name but without the namespace -->
+            <xsl:attribute name="{local-name()}">
+                <xsl:value-of select="."/>
+            </xsl:attribute>
+        </xsl:template>
+        <!-- Template to process text and other nodes -->
+        <xsl:template match="text()|comment()|processing-instruction()">
+            <xsl:copy/>
+        </xsl:template>
+    </xsl:stylesheet>
+</localEntry>

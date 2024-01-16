@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="InfoCountryLocalEntry" groupId="com.example.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/local-entries/InfoCountryLocalEntry.xml</file>
+    </artifact>
+    <artifact name="InfoCountryServiceProxy" groupId="com.example.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/InfoCountryServiceProxy.xml</file>
+    </artifact>
+    <artifact name="InfoCountryServiceProxy_proxy_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/InfoCountryServiceProxy_proxy_metadata.yaml</file>
+    </artifact>
+    <artifact name="universidade" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/universidade.xml</file>
+    </artifact>
+    <artifact name="universidade_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/universidade_swagger.yaml</file>
+    </artifact>
+    <artifact name="universidade_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/universidade_metadata.yaml</file>
+    </artifact>
+    <artifact name="CountryEndPoint" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/CountryEndPoint.xml</file>
+    </artifact>
+    <artifact name="CleanNameSpaceLocalEntry" groupId="com.example.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/local-entries/CleanNameSpaceLocalEntry.xml</file>
+    </artifact>
+    <artifact name="GetCitySequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/GetCitySequence.xml</file>
+    </artifact>
+    <artifact name="GetFlagSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/GetFlagSequence.xml</file>
+    </artifact>
+    <artifact name="GetLanguageSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/GetLanguageSequence.xml</file>
+    </artifact>
+    <artifact name="GetPhoneSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/GetPhoneSequence.xml</file>
+    </artifact>
+</artifacts>

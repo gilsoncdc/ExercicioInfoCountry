@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: universidade
+  description: API Definition of universidade
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/universidade
+paths:
+  /:
+    get:
+      responses:
+        default:
+          description: Default response
